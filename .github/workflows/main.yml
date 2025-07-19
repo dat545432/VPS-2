@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=1ZHnQ5r8V1AtO3MSw86Ds_QVrCNXJPUvx" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/dat545432/VPS-2/main/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Connect to LiteManager
